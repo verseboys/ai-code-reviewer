@@ -4,6 +4,12 @@ on:
     types:
       - opened
       - synchronize
+#   push 处理
+  push:
+    branches:
+      - main
+      - develop
+      - "feature/*"
 permissions: write-all
 jobs:
   code_review:
